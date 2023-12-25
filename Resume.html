@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon"type="image/x-icon " href="images/photograph.jpg">
+
+    <title>Anandh M - Resume</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(#a619f8, #00f2fe);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        #resume-container {
+            width: 50%;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #light-animation {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #3498db, #e74c3c, #2ecc71, #f39c12, #9b59b6);
+            animation: lightAnimation 2s linear infinite;
+            pointer-events: none;
+            opacity: 0.2;
+        }
+
+        @keyframes lightAnimation {
+            0% {
+                transform: translateX(-100%);
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        .contact-row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .contact-info {
+            flex: 1;
+        }
+
+        .photo {
+            max-width: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+
+        section {
+            margin: 20px 0;
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+            color: #3498db;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+        a {
+            color: #3498db;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .download-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #0dff00;
+            transform: scale(1.05);
+        }
+        @media only screen and (max-width: 600px) {
+    #resume-container {
+        width: 90%; /* Adjusted width for smaller screens */
+    }
+
+    .photo {
+        max-width: 70px; /* Decrease photo size on smaller screens */
+    }
+}
+    </style>
+</head>
+<body>
+    <div id="resume-container">
+        <header>
+            <img class="photo" src="images/photograph.jpg" alt="Passport-size photo">
+            <div>
+                <h1>Anandh M</h1>
+                <p>Master of Computer Applications | Web Developer</p>
+            </div>
+        </header>
+
+        <section>
+            <h2>Contact</h2>
+            <div class="contact-row">
+                <div class="contact-info">
+                    <p>Languages Known: English, Tamil</p>
+                    <p>Phone: <a href="tel:7824964829">+91 7824964829</a></p>
+                    <p>Email: <a href="mailto:anandh172002@gmail.com">anandh172002@gmail.com</a></p>
+                    <p>Location: Madurai - 625 014</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Profile</h2>
+            <p>
+                As a recent graduate, I am enthusiastic about the dynamic intersection of
+                technology and design. My skill set spans HTML, CSS, and JavaScript, coupled with
+                proficiency in popular design tools like Figma, Adobe Photoshop, and Adobe XD. I
+                aspire to contribute my abilities to the creation of user-centric and visually appealing
+                web interfaces. Eager to collaborate and adapt within diverse teams in the realms of
+                design and development.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills</h2>
+            <ul>
+                <li>Python Programming</li>
+                <li>C Programming</li>
+                <li>SQL</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>PHP</li>
+                <li>Bootstrap</li>
+                <li>JavaScript</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Education</h2>
+            <div>
+                <h3>MCA (2022-2024)</h3>
+                <p>Thiagarajar College Of Engineering, Madurai 625 015</p>
+            </div>
+            <div>
+                <h3>BCA (2019-2022)</h3>
+                <p>The American College, Madurai 625 002</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Projects</h2>
+
+            <div>
+                <h3>Learning Management System (7/2023 - 10/2023)</h3>
+                <p>
+                    Develop a comprehensive online learning platform featuring online courses,
+                    interactive quizzes, and a vast repository of study materials. Provide a user-friendly
+                    interface for students to access a variety of courses, enabling self-paced learning.
+                    Offer instant feedback through quizzes and a rich library of study materials to enhance
+                    the online education experience and cater to diverse educational needs. Technologies:
+                    HTML, CSS, JavaScript, PHP, and MySql.
+                </p>
+            </div>
+
+            <div>
+                <h3>E-Library Mobile Application (9/2023 - 10/2023)</h3>
+                <p>
+                    Designed and implemented a React Native application enabling users to search for
+                    books online using the open library API.
+                </p>
+            </div>
+
+            <div>
+                <h3>Online Bonafide Certificate Generation System (1/2023 - 04/2022)</h3>
+                <p>
+                    Created a user-friendly web application for students to easily acquire Bonafide
+                    certifications and apply for education loans online. Digitized the entire process with
+                    efficient file management and reference tracking through a client-server architecture.
+                    Technologies: HTML, CSS, JavaScript, PHP, and MySql.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certifications</h2>
+            <ul>
+                <li>Developer and Technology Virtual Experience Programme – Accenture</li>
+                <li>Software Engineering Virtual Experience Program - Align Technology</li>
+                <li>Master the C Programming – Udemy</li>
+                <li>Python Basics for Data Science – EdX</li>
+                <li>HTML, CSS, JavaScript for Web Developers - Coursera</li>
+                <li>Frontend Development - Training | Tech Quest Consultancy</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Internships</h2>
+
+            <div>
+                <h3>Front End Development</h3>
+                <p>
+                    Virtual internship at TECH QUEST CONSULTANCY for 1 month. Played a key role in
+                    frontend development, collaborating with designers to transform visual concepts into
+                    responsive web interfaces using HTML5, CSS3, and JavaScript. Proficiently utilized Figma,
+                    Adobe Photoshop, and Adobe Express to ensure polished user experiences.
+                </p>
+            </div>
+
+            <div>
+                <h3>Web Development</h3>
+                <p>
+                    Completed a one-month self-paced web development internship at LETS GROW MORE,
+                    emphasizing HTML5, CSS3, and JavaScript. Demonstrated self-motivation and discipline by
+                    successfully finishing tasks and projects in a flexible work environment.
+                </p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Additional Skills</h2>
+            <ul>
+                <li>GIT</li>
+                <li>Data Analytics - Power BI</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Download Resume</h2>
+            <p>Click the button below to download my resume:</p>
+            <a href="Anandh.pdf" download="AnandhM_Resume.pdf" class="download-button">Download Resume</a>
+        </section>
+    </div>
+</body>
+</html>
